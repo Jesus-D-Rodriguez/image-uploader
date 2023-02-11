@@ -5,7 +5,7 @@
   "description": "\"A page to upload images\"",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "start": "node src/index.js"
   },
   "author": "Jesus David",
   "license": "ISC",
