@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image uploader</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+
+</head>
+<body>
+    <div class="container">
+            <div class="container-box">
+                <div class="container-text">
+                    <br>
+                    <br>
+
+
+                    
+                        <div class="text-1">
+                            <div class="a">
+                                Uploaded succesfully!
+                            </div>
+                        </div>
+                        <div class="text-2">
+                            <div class="b">
+                                File should be Jpeg, Png,...
+                            </div>
+                        </div>
+                </div>
+                <div class="image-box">
+                    <div class="image-content">
+                        <div class="image-image">
+                        </div>
+                        <div class="image-text">
+                            Drag & Drop your image here
+                        </div>
+                    </div>
+                </div>
+                <div class="image-button" id="image-button">
+                    <div class="image-button-text">
+                        Or
+                    </div>
+                    <div class="image-button-button">
+                        
+                        <form  method="POST" action="/" enctype="multipart/form-data" id="imgForm">
+                            <!--<button class="button">Choose a file</button>-->
+                            
+                            <!--<input type="submit">-->
+                            <label for="images" class="button">Choose a file</label>
+                            <input type="file" id="images" name="images" style="display: none;" onchange="javascript:document.getElementById('imgForm').submit();">
+
+                        </form>
+                    </div> 
+
+                </div>
+            </div>
+    </div>
+
+
+</body>
+</html>

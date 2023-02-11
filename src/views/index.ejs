@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <title>Image uploader</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+
+</head>
+<body>
+    <div class="container">
+        <div id="loader" style="display: none;">
+            <div>
+                <p id="loader-paragraph">Uploading...</p>
+                <div class="progress">
+                  <div id="progress-bar" class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="indicator"></div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+            <div class="container-box">
+
+                    <div class="container-text">
+                        <br>
+                        <br>
+
+                        
+                        
+                            <div class="text-1">
+                                <div class="a">
+                                    Upload your image
+                                </div>
+                            </div>
+                            <div class="text-2">
+                                <div class="b">
+                                    File should be Jpeg, Png,... 
+                                </div>
+                            </div>
+                    </div>
+
+                        <form class="image-box" id="imgBox">
+                            <!--<label for="imagesBox" class="button" style="display: none; height: 100%; width: 100%;">Choose a file</label>
+                            <input type="file" id="imagesBox" name="imagesBox" style="display: none; height: 100%; width:100%;" onchange="javascript:document.getElementById('imgBox').submit();">-->
+                            <!--<input type="file" id="imagesBox" >-->
+                            <div class="image-content">
+                                <div class="image-image" style="background: none;">
+                                    <img src="../images/image.svg" alt="">
+                                </div>
+                                <div class="image-text">
+                                    Drag & Drop your image here
+                                </div>
+                            </div>
+                        </form>
+
+                    <div style="height: 100%;">             
+                        <div class="image-button" id="image-button">
+                            <div class="image-button-text">
+                                Or
+                            </div>
+                            <div class="image-button-button">
+                                
+                                <form  method="POST" action="/" enctype="multipart/form-data" id="imgForm">
+                                    <!--<button class="button">Choose a file</button>-->
+                                    
+                                    <!--<input type="submit">-->
+                                    <label for="images" class="button">Choose a file</label>
+                                    <input type="file" id="images" name="images" style="display: none;" >
+
+                                </form>
+                            </div> 
+
+                        </div>
+                    </div>
+
+            </div>
+    </div>
+
+
+</body>
+</html>
+<script src="script.js"></script>
+<!--<script src="../routes/index.js"></script>-->
+
