@@ -4,7 +4,15 @@ let text1 = document.querySelector('.text-1');
 let imageButton = document.querySelector('.image-button');
 let images = document.getElementById('images');
 let imgForm = document.getElementById('imgForm');
+var clipboard = new ClipboardJS('.btn');
 
+clipboard.on('success', function(e) {
+  console.log(e);
+});
+
+clipboard.on('error', function(e) {
+  console.log(e);
+});
 
 
 
@@ -112,7 +120,7 @@ images.addEventListener('change', (e)=>{
     imageButton.innerHTML = `
     <div id="div-submitted">
     <input type="text" value="${url + "uploads/" + images.files[0].name}" id="myInput"></input> 
-    <button id="b-s" onclick="myFunction()">Copy link</button>
+    <button id="b-s" class="btn" data-clipboard-target="#myInput">Copy link</button>
     </div>`
 
 
