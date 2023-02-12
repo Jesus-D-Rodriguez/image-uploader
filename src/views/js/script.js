@@ -69,7 +69,7 @@ imageBox.addEventListener('drop', (e)=>{
     imageButton.innerHTML = `
     <div id="div-submitted">
     <input type="text" value="${url + "uploads/" + e.dataTransfer.files[0].name}" id="myInput"></input> 
-    <button id="b-s" onclick="myFunction()">Copy link</button>
+    <button id="b-s" class="btn" data-clipboard-target="#myInput" onclick="myFunction()">Copy link</button>
     </div>`
 
 
