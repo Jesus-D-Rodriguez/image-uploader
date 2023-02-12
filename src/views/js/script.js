@@ -120,7 +120,7 @@ images.addEventListener('change', (e)=>{
     imageButton.innerHTML = `
     <div id="div-submitted">
     <input type="text" value="${url + "uploads/" + images.files[0].name}" id="myInput"></input> 
-    <button id="b-s" class="btn" data-clipboard-target="#myInput">Copy link</button>
+    <button id="b-s" class="btn" data-clipboard-target="#myInput" onclick="myFunction()">Copy link</button>
     </div>`
 
 
@@ -131,11 +131,11 @@ function myFunction() {
     var copyText = document.getElementById("myInput");
   
     // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+   // copyText.select();
+   // copyText.setSelectionRange(0, 99999); // For mobile devices
   
      // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
+   // navigator.clipboard.writeText(copyText.value);
   
     
     // Alert the copied text
